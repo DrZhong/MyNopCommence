@@ -1,0 +1,2 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=(LocalDb)\v11.0;Initial Catalog=Nop3.4;Integrated Security=True;Persist Security Info=False
