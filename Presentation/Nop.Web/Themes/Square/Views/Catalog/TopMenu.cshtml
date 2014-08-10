@@ -1,0 +1,31 @@
+﻿@model TopMenuModel
+@using Nop.Core.Domain
+@using Nop.Core.Infrastructure
+@using Nop.Web.Models.Catalog;
+@helper RenderCategoryLine(CategorySimpleModel category, int level, bool responsiveMobileMenu)
+{
+    <div class="group fn-clear">
+        <div class="group-title"><a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name</a></div>
+        @if (category.SubCategories.Count > 0)
+        {
+            <ul class="sublist">
+            @foreach (var subCategory in category.SubCategories)
+            {
+                <li><a href="@Url.RouteUrl("Category", new { SeName = subCategory.SeName })">@subCategory.Name</a></li>
+            }
+           </ul>
+        }
+     </div>
+}
+
+
+
+<div id="categoriesAllCon" class="categoriesAllCon categoriesShow fn-clear">
+    @if (Model.Categories.Count > 0)
+    {
+        foreach (var category in Model.Categories)
+        {
+            @RenderCategoryLine(category, 0, false)
+        }
+    }
+</div>
