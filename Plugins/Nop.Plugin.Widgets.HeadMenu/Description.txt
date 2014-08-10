@@ -1,0 +1,8 @@
+﻿Group: Widgets
+FriendlyName: Head Menu
+SystemName: Widgets.HeadMenu
+Version: 1.05
+SupportedVersions: 3.40
+Author: DeZhong
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.HeadMenu.dll
