@@ -10,21 +10,20 @@
     //store name
     var storeName = EngineContext.Current.Resolve<IStoreContext>().CurrentStore.GetLocalized(x => x.Name);
 }
-<div class="master-wrapper-title">
-    @Html.Action("HeaderLinks", "Common")
-    @Html.Action("FlyoutShoppingCart", "ShoppingCart")
-</div>
 
-<div class="header">
+<div class="index-head">
     @Html.Widget("header")
-    <div class="header-logo">
-        <a href="@Url.RouteUrl("HomePage")">
-            <img title="" alt="@storeName" src="@Url.Content(logoPath)">
-        </a>
+    <div class="index-head-logo">
     </div>
-    
-    <div class="search-box">
-        @Html.Action("SearchBox", "Catalog")
+
+    <div class="index-head-menu">
+        <ul>
+            @Html.Partial("Header.Menu")
+        </ul>
     </div>
-    
+
+    <div class="header-links-wrapper">
+        @Html.Action("HeaderLinks", "Common")
+        @Html.Action("FlyoutShoppingCart", "ShoppingCart")
+    </div>
 </div>

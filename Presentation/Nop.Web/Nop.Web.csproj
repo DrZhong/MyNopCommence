@@ -2004,11 +2004,16 @@
     <Content Include="Themes\Square\Views\Shared\_Root.Head.cshtml" />
     <Content Include="Themes\Square\Views\Shared\_RootPopup.cshtml" />
     <Content Include="Themes\Square\Views\Shared\Error.cshtml" />
-    <Content Include="Themes\Square\Views\Shared\Header.cshtml" />
     <Content Include="Themes\Square\Views\Shared\LanguageAttributes.cshtml" />
     <Content Include="Themes\Square\Views\Catalog\TopMenu.cshtml" />
     <Content Include="Themes\Square\Views\Shared\Header.Menu.cshtml" />
     <Content Include="Themes\Square\Views\Common\Footer.cshtml" />
+    <Content Include="Themes\Square\Views\Catalog\CategoryTemplate.ProductsInGridOrLines.cshtml" />
+    <Content Include="Themes\Square\Views\Shared\_ColumnsOneHome.cshtml" />
+    <Content Include="Themes\Square\Views\Shared\_RootHome.cshtml" />
+    <Content Include="Themes\Square\Views\Shared\HeaderHome.cshtml" />
+    <Content Include="Themes\Square\Views\Shared\Header.cshtml" />
+    <Content Include="Themes\Square\Views\Catalog\SearchBox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />

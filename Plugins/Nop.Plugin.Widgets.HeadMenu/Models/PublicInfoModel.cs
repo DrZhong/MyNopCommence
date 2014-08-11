@@ -1,6 +1,6 @@
 ﻿using Nop.Web.Framework.Mvc;
 
-namespace Nop.Plugin.Widgets.NivoSlider.Models
+namespace Nop.Plugin.Widgets.HeadMenu.Models
 {
     public class PublicInfoModel : BaseNopModel
     {
