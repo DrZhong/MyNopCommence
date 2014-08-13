@@ -365,6 +365,7 @@
     <Compile Include="Validators\Customer\RegisterValidator.cs" />
     <Compile Include="Validators\Customer\CustomerInfoValidator.cs" />
     <Compile Include="Validators\Common\ContactUsValidator.cs" />
+    <Compile Include="_ExtendModels\Catalog\ProductOverviewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Install\create_required_data.sql" />
@@ -2014,6 +2015,7 @@
     <Content Include="Themes\Square\Views\Shared\HeaderHome.cshtml" />
     <Content Include="Themes\Square\Views\Shared\Header.cshtml" />
     <Content Include="Themes\Square\Views\Catalog\SearchBox.cshtml" />
+    <Content Include="Themes\Square\Views\Product\ProductTemplate.Simple.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />

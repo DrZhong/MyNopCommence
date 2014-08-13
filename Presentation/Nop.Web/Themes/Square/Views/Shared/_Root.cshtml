@@ -4,9 +4,9 @@
 @Html.Widget("body_start_html_tag_after")
 @Html.Partial("_Notifications")
 @Html.Action("AdminHeaderLinks", "Common")
-<div class="master-wrapper-page">
-    @Html.Action("JavaScriptDisabledWarning", "Common")
-    <div class="master-wrapper-content">
+@*<div class="master-wrapper-page">*@
+@Html.Action("JavaScriptDisabledWarning", "Common")
+<div class="master-wrapper-header">
         <script type="text/javascript">
             AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
         </script>
@@ -21,11 +21,19 @@
             </div>
         </div>
         <div class="master-wrapper-main">
-            @RenderBody()
+          
         </div>
         @Html.Widget("content_after")
     </div>
-    @Html.Action("Footer", "Common")
+    
+<div class="master-wrapper-page fn-clear">
+    <div class="master-wrapper-content fn-clear">
+        <div class="master-wrapper-main">
+            @RenderBody()
+        </div>
+    </div>
 </div>
+    @Html.Action("Footer", "Common")
+@*</div>*@
 @Html.Action("EuCookieLaw", "Common")
 @Html.Widget("body_end_html_tag_before")

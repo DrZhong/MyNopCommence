@@ -18,6 +18,7 @@
         addtocartlink = Url.RouteUrl("AddProductToCart-Catalog", new { productId = Model.Id, shoppingCartTypeId = shoppingCartTypeId, quantity = quantity, });
     }    
 }
+@*@Model.VendorModel.Name*@
 <div class="product-item" data-productid="@Model.Id">
     <div class="picture">
         <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })" title="@Model.DefaultPictureModel.Title">
@@ -31,7 +32,13 @@
          <div>
              <div class="storename">
                  发布人:
-                 <a href="/vendor/16" target="_blank" title="空缺的发布人">空缺的发布人</a>
+                 @if (Model.ShowVendor) { 
+                    <a href="@Url.RouteUrl("Vendor", new { SeName = Model.VendorModel.SeName })" target="_blank" title="">@Model.VendorModel.Name</a>
+                 }
+                 else
+                 {
+                    <a href="/" target="_blank" title="">三美商城</a>
+                 }
              </div>
              <div class="prices actual-price">
                 @Model.ProductPrice.Price
